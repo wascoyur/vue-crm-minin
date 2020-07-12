@@ -26,6 +26,14 @@ Vue.use(VueRouter)
     },
     component: () => import('../views/Login.vue')
   },
+  {
+    path: '/detail',
+    name: 'detail',
+    meta: {
+      layout: 'detail'
+    },
+    component: () => import('../views/DetailRecord.vue')
+  },
 
 
 ]

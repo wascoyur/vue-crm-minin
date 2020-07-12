@@ -1,6 +1,6 @@
 <template>
     <form class="card auth-card">
-  <div class="card-content">
+      <div class="card-content">
     <span class="card-title">Домашняя бухгалтерия</span>
     <div class="input-field">
       <input
@@ -19,8 +19,8 @@
       >
       <label for="password">Пароль</label>
       <small class="helper-text invalid">Password</small>
+      </div>
     </div>
-  </div>
   <div class="card-action">
     <div>
       <button
@@ -32,11 +32,11 @@
       </button>
     </div>
 
-    <p class="center">
+      <p class="center">
       Нет аккаунта?
       <a href="/">Зарегистрироваться</a>
-    </p>
-  </div>
-</form>
+      </p>
+    </div>
+  </form>
 
 </template>
