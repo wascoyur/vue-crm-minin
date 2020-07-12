@@ -34,6 +34,14 @@ Vue.use(VueRouter)
     },
     component: () => import('../views/DetailRecord.vue')
   },
+  {
+    path:'/history',
+    name:'history',
+    meta:{
+      layout:'history'
+    },
+    companent: ()=>import('../views/History.vue')
+  },
 
 
 ]
