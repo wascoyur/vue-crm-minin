@@ -1,9 +1,9 @@
 <template>
   <div class="app-main-layout">
-    <Navbar />
-    <Sidebar />
+    <Navbar @click="isOpen=!isOpen"/>
+    <Sidebar v-model="isOpen"/>
 
-    <main class="app-content">
+    <main class="app-content " :class="{full: !isOpen}">
       <div class="app-page">
         <router-view />
       </div>
@@ -22,5 +22,8 @@ import Sidebar from "@/components/app/Sidebar";
 export default {
   name: "main-layout",
   components: { Navbar, Sidebar },
+  data:()=>({
+    isOpen:true
+  })
 };
 </script>
