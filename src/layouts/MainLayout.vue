@@ -9,11 +9,11 @@
       </div>
     </main>
 
-    <div class="fixed-action-btn">
+    <router-link class="fixed-action-btn" to='/record'>
       <a class="btn-floating btn-large blue" href="#">
         <i class="large material-icons">add</i>
       </a>
-    </div>
+    </router-link>
   </div>
 </template>
 <script>
