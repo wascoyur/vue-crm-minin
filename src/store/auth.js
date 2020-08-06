@@ -7,6 +7,16 @@ export default{
       }catch(e){
         throw error
       }
+    },
+    async register({},{email, password, name}){
+      try {
+        await firebase.auth().createUserWithEmailAndPassword(email, password)
+      } catch (e) {
+        throw error
+      }
+    },
+    async logout(){
+      await firebase.auth().signOut()
     }
   }
 }
