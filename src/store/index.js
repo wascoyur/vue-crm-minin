@@ -16,6 +16,9 @@ export default new Vuex.Store({
       state.error = null
     }
   },
+  getters: {
+    error: s => s.error
+  },
   actions: {
   },
   modules: {
