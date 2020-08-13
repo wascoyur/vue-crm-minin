@@ -3,6 +3,7 @@
       <router-view/>
     </div>
 </template>
+<<<<<<< Updated upstream
 <script>
 import messages from '@/utils/messages'
 export default {
@@ -19,3 +20,12 @@ export default {
   }
 }
 </script>
+=======
+
+<script>
+export default {
+
+}
+</script>
+
+>>>>>>> Stashed changes
