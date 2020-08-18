@@ -24,6 +24,12 @@ export default {
   components: { Navbar, Sidebar },
   data:()=>({
     isOpen:true
-  })
+  }),
+  async mounted(){
+    if(!Object.keys(this.$$store.getters.info)){
+      await this.$store.dispatch('fetchinfo')
+    }
+  },
+
 };
 </script>
