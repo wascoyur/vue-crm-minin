@@ -4,7 +4,7 @@ export default{
     info:{}
   },
   mutations:{
-    setInfo(state,info){
+    setInfo(state, info){
       state.info = info
     },
     clearInfo(state){

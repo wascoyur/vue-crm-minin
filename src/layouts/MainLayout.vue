@@ -30,6 +30,5 @@ export default {
       await this.$store.dispatch('fetchInfo')
     }
   },
-
 };
 </script>
