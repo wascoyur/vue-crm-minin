@@ -22,9 +22,6 @@ export default new Vuex.Store({
   },
   actions: {
   },
-  getters:{
-    error: s => s.error
-  },
   modules: {
     auth, info
   }

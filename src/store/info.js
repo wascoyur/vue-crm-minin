@@ -1,4 +1,4 @@
-import 'firebase/app'
+import firebase from 'firebase/app'
 export default{
   state:{
     info:{}
@@ -12,18 +12,15 @@ export default{
     }
   },
   actions:{
-    async fetchinfo(dispatch, commit){
+    async fetchInfo(dispatch, commit){
       try{
         const uid =  await dispatch('getUid')
-        const info = (await firebase.database().ref(`/users/${uid}/info`).once('value')).val
+        const info = (await firebase.database().ref(`/users/${uid}/info`).once('value')).val()
         commit('setInfo', info)
-      }catch(e){
-
-      }
-
-    },
-    getters:{
-      info: s=>s.info
+      }catch(e){}
     }
-  }
+  },
+  getters:{
+      info: s => s.info
+    }
 }
